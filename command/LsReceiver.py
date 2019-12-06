@@ -7,8 +7,10 @@ class LsReceiver(object):
         :return:
         """
         cur_dir = './'
+
         filenames = []
         for filename in os.listdir(cur_dir):
             if os.path.isfile(os.path.join(cur_dir, filename)):
                 filenames.append(filename)
-        print('content dir', ' '.os.path.join(filenames))
+
+        print('Content of dir: ', ' '.join(filenames))
