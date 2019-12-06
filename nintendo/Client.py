@@ -33,4 +33,10 @@ if __name__ == '__main__':
     remote_nintendo.button_was_pushed(2)
     remote_nintendo.button_was_pushed(3)
 
+    # 5. history 출력
+    remote_nintendo.show_history()
+
+    # 6. undo all
+    remote_nintendo.undo_all()
+
 

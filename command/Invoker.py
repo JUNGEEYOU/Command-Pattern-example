@@ -24,7 +24,7 @@ class Invoker(object):
             command.undo()
         print('Undo all finished.')
 
-    def print_history(self):
+    def show_history(self):
         """ 히스토리 print """
         for his in self.history:
             print("history", his)

@@ -36,5 +36,5 @@ if __name__ == '__main__':
     # 인보커가 리시버에게 작업해달라고 요청
     invoker.create_file()
     invoker.delete_file()
-    invoker.print_history()
+    invoker.show_history()
     invoker.undo_all()

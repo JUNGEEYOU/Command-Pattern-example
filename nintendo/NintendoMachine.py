@@ -9,9 +9,6 @@ class NitendoMachine(object):
     def __init__(self):
         self.array_command = [NoCommand()] *7 # 커맨드 리스트
         self.history =[]         # 명령 히스토리 저장
-        # for i in range(7):
-        #     self.array_command[i] = NoCommand()
-
 
     def set_command(self, slot =int, command = Command):
         """
@@ -22,14 +19,19 @@ class NitendoMachine(object):
         """
         self.array_command[slot] = command
 
-
     def button_was_pushed(self, slot):
         self.array_command[slot].execute()
         self.history.append(self.array_command[slot])
 
+    def undo_all(self):
+        print('Undo all')
+        for command in reversed(self.history):
+            command.undo()
+        print('Undo all finished.')
+
     def show_history(self):
         print("*******history******")
         for history in self.history:
-            print("test")
+            print("history:", history)
 
 
