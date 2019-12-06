@@ -1,5 +1,4 @@
 import abc
-
 class Command(object):
     """
     커맨드 인터페이스
