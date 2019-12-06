@@ -7,7 +7,7 @@ class NitendoMachine(object):
     인보커 - 닌텐도 기기
     """
     def __init__(self):
-        self.array_command = [NoCommand()] *7 # 커맨드 리스트
+        self.array_command = [NoCommand()] *8 # 커맨드 리스트
         self.history =[]         # 명령 히스토리 저장
 
     def set_command(self, slot =int, command = Command):
